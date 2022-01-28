@@ -1,8 +1,22 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
+  --dark-gray: #2b2b2b;
+  --white:#FFFFFF;
+  --black:#000000;
+  --aqua:#489c79;
+  --dark:#0000004D;
+  --light-purple:#c358d6;
+  --light-gray:#dddddd;
+  --purple:#BF40BF;
+  --alice-blue:#f0f8fa;
+  --yellow:#edc655;
+  --light-yellow:#fcffad;
+  --orange:#f76414;
 }
+
+
+
 
 a {
   color: var(--primary-color);
@@ -18,7 +32,7 @@ nav a:hover color:rgb(210, 175, 255);
 */
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color:var(--white);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -26,13 +40,13 @@ body {
 }
 
 a {
-  color: #357b70;
+  color:var(--primary-color);
 }
 
 /* the structure when styling "a": (1)a:visited , (2)a:hover, (3)a:active */
 a:visited {
   /* visited link */
-  color: rgb(0, 0, 0);
+  color:var(--black);
 }
 
 a:hover,
@@ -43,7 +57,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color:var(--aqua);
 }
 
 input,
@@ -66,14 +80,14 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: white;
+  background-color:var(--primary-color);
+  color:var(--white);
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--dark);
 }
 
 button:hover,
@@ -85,8 +99,8 @@ button:focus {
 }
 
 .button__secondary {
-  background-color: #e0b354;
-  color: #2b2b2b;
+  background-color:var(--secondary-color);
+  color:var(--dark-gray);
 }
 
 .navigation-list__item {
@@ -100,7 +114,7 @@ button:focus {
 
 .navigation-list__item, 
 .navigation-list__item--active {
-  color: rgb(195, 88, 214);
+  color:var(--light-purple);
   text-decoration: none;
   float: right;
   font-family: "Permanent Marker", cursive;
@@ -109,7 +123,7 @@ button:focus {
 }
 
 .navigation-list__item:hover {
-  color: rgb(195, 88, 214);
+  color:var(--light-purple);
 }
 
 
@@ -120,9 +134,9 @@ button:focus {
 table,
 th,
 td {
-  border: 1px rgb(0, 0, 0);
+  border: 1px var(--black);
   border-collapse: collapse;
-  border-bottom: 1px rgb(0, 0, 0);
+  border-bottom: 1px var(--black);
   padding: 8px;
   width: 100%;
   text-align: center;
@@ -134,7 +148,7 @@ td {
 th,
 td {
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 #contact-formInfoText {
@@ -180,7 +194,7 @@ label, .standard-label {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 2px solid #BF40BF;
+  border-bottom: 2px solid var(--purple);
 }
 
 .page-header_item {
@@ -194,7 +208,7 @@ label, .standard-label {
 
 .navigation-list {
   list-style-type: none;
-  background-color: rgb(240, 248, 250);
+  background-color: var(--alice-blue);
   margin: 10px;
   padding: 0px;
   padding-left: 0px;
@@ -227,7 +241,7 @@ label, .standard-label {
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color: var(--light-gray);
     width: auto;
     min-height: auto;
     margin: 0px;
@@ -307,13 +321,13 @@ section {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #357b70;
-  color: white;
+  background-color: var(--primary-color);
+  color:var(--white);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--dark);
   transition-duration: 0.2s;
   transition-property: opacity;
 }
@@ -336,13 +350,13 @@ button:focus,
   /* takes the font from the outer container */
   font-family: inherit;
   /* style button */
-  background-color: #357b70;
-  color: white;
+  background-color: var(--primary-color);
+  color:var(--white);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--dark);
   transition: 0.2s opacity;
 }
 
@@ -356,13 +370,13 @@ button:focus,
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: var(--yellow);
   }
   50% {
-    fill: #fcffad;
+    fill: var(--light-yellow);
   }
   100% {
-    fill: #f76414;
+    fill: var(--orange);
   }
 }
 
@@ -397,6 +411,6 @@ button:focus,
 }
 
 a {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 

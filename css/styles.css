@@ -16,8 +16,6 @@
 }
 
 
-
-
 a {
   color: var(--primary-color);
 }
@@ -33,7 +31,7 @@ nav a:hover color:rgb(210, 175, 255);
 
 body {
   background-color:var(--white);
-  font-family: "Josefin Sans", sans-serif;
+  font-family:'Sen', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;

@@ -166,6 +166,31 @@ label, .standard-label {
   border-radius: 50%;
 }
 
+.contact-text {
+  text-align:center;
+  margin-left: 60px;
+}
+
+/* this code does not work!!! I would like to align it just below the portfolio section.
+And change the color of the button...
+
+#contact-button {
+  background-color:var(--white);
+  color: var(--black);
+  border-radius: 12px 36px;
+  text-align: center;
+  border: 2px solid var(--light-purple);;
+  margin-left: 60px;
+}
+
+.contact-button:hover {
+  text-decoration: none;
+  background-color: var(--light-purple);
+  color:var(--white)
+}
+*/
+    
+
 .page-footer {
   clear: both;
   display: flex;

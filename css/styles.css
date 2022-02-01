@@ -31,9 +31,9 @@ nav a:hover color:rgb(210, 175, 255);
 
 body {
   background-color:var(--white);
-  font-family:'Sen';
+  font-family:'Sen', sans-serif;
   font-weight: 400;
-  font-size: 2px;
+  font-size: 20px;
   line-height: 1.6;
 }
 

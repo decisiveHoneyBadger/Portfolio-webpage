@@ -2,23 +2,24 @@
   --primary-color: #357b70;
   --secondary-color: #e0b354;
   --dark-gray: #2b2b2b;
-  --white:#FFFFFF;
-  --black:#000000;
-  --aqua:#489c79;
-  --dark:#0000004D;
-  --light-purple:#c358d6;
-  --light-gray:#dddddd;
-  --purple:#BF40BF;
-  --alice-blue:#f0f8fa;
-  --yellow:#edc655;
-  --light-yellow:#fcffad;
-  --orange:#f76414;
+  --white: #FFFFFF;
+  --black: #000000;
+  --aqua: #489c79;
+  --dark: #0000004D;
+  --light-purple: #c358d6;
+  --light-gray: #dddddd;
+  --purple: #BF40BF;
+  --alice-blue: #f0f8fa;
+  --yellow: #edc655;
+  --light-yellow: #fcffad;
+  --orange: #f76414;
 }
 
 
 a {
   color: var(--primary-color);
 }
+
 /*
 rgb(238, 130, 238) violet 
 rgba(255,0,255,0.3) cerise
@@ -30,21 +31,21 @@ nav a:hover color:rgb(210, 175, 255);
 */
 
 body {
-  background-color:var(--white);
-  font-family:'Sen', sans-serif;
+  background-color: var(--white);
+  font-family: 'Sen', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
 }
 
 a {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* the structure when styling "a": (1)a:visited , (2)a:hover, (3)a:active */
 a:visited {
   /* visited link */
-  color:var(--black);
+  color: var(--black);
 }
 
 a:hover,
@@ -55,7 +56,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color:var(--aqua);
+  color: var(--aqua);
 }
 
 input,
@@ -78,8 +79,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color:var(--primary-color);
-  color:var(--white);
+  background-color: var(--primary-color);
+  color: var(--white);
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -97,8 +98,8 @@ button:focus {
 }
 
 .button__secondary {
-  background-color:var(--secondary-color);
-  color:var(--dark-gray);
+  background-color: var(--secondary-color);
+  color: var(--dark-gray);
 }
 
 .navigation-list__item {
@@ -110,9 +111,9 @@ button:focus {
   padding: 3px;
 }
 
-.navigation-list__item, 
+.navigation-list__item,
 .navigation-list__item--active {
-  color:var(--light-purple);
+  color: var(--light-purple);
   text-decoration: none;
   float: right;
   font-family: "Permanent Marker", cursive;
@@ -121,7 +122,7 @@ button:focus {
 }
 
 .navigation-list__item:hover {
-  color:var(--light-purple);
+  color: var(--light-purple);
 }
 
 
@@ -129,6 +130,7 @@ button:focus {
 .navigation-list__item--active a {
   float: right;
 }
+
 table,
 th,
 td {
@@ -177,7 +179,7 @@ label, .standard-label {
   display: flex;
   flex-direction: column;
   text-align: center;
-  flex-direction: row-reverse column-reverse;
+  flex-direction: row-reverse;
 }
 
 * {
@@ -225,6 +227,7 @@ label, .standard-label {
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -245,6 +248,7 @@ label, .standard-label {
     margin: 0px;
     padding: 15px;
   }
+
   /* uncomment below code to see what happens */
 
   .grid__item:last-child {
@@ -266,6 +270,7 @@ label, .standard-label {
 #contact-img {
   margin: 5px;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -293,19 +298,23 @@ section {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -320,7 +329,7 @@ section {
   font-family: inherit;
   /* styles the button */
   background-color: var(--primary-color);
-  color:var(--white);
+  color: var(--white);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -349,7 +358,7 @@ button:focus,
   font-family: inherit;
   /* style button */
   background-color: var(--primary-color);
-  color:var(--white);
+  color: var(--white);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -370,9 +379,11 @@ button:focus,
   0% {
     fill: var(--yellow);
   }
+
   50% {
     fill: var(--light-yellow);
   }
+
   100% {
     fill: var(--orange);
   }
@@ -386,6 +397,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -399,6 +411,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -411,4 +424,3 @@ button:focus,
 a {
   color: var(--primary-color);
 }
-

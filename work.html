@@ -1,148 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
-  <link
-    rel="shortcut icon"
-    href="./img/ico/favicon.ico"
-    type="image/x-icon"/>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" 
-    rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./img/ico/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html">
-      <img src="./img/svg/icons/logo-kg.svg"  
-      alt="personal logo of Kerem Guevenc" class="personal-logo"
-      width="150" height="150">
-    </a>
-        
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html"
-            role="menuitem"
-            class="navigation-list__item navigation-list__item">Home</a >
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
         </li>
 
         <li role="presentation">
-          <a href="aboutme.html" 
-          role="menuitem"
-          class="navigation-list__item navigation-list__item">About me</a>
+          <a href="aboutme.html" role="menuitem" class="navigation-list__item navigation-list__item"
+            aria-label="about me">About</a>
         </li>
 
         <li role="presentation">
-          <a href="work.html" role="menuitem" 
-          class="navigation-list__item navigation-list__item--active">Work</a>
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
         </li>
 
         <li role="presentation">
-          <a href="contact.html" 
-          role="menuitem" 
-          class="navigation-list__item navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
+    <a href="index.html">
+      <img src="./img/svg/icons/logo-kg.svg" alt="personal logo of Kerem Guevenc" class="personal-logo" width="120"
+        height="120" />
+    </a>
   </header>
 
   <section>
     <h1>Work</h1>
     <div class="grid">
-    <!-- Grid items will live here -->
+      <!-- Grid items will live here -->
       <div class="grid__item">
-        <h2>Mobile web app</h2>
+        <h2>myFlix-Angular-client</h2>
         <p>
-          Within this project, I was responsible for the frontend. It is written in React.js.
-          Additionally, I've created the HTML and CSS templates.
+          This single-page, responsive application (SPA) is the client-side for an application called myFlix ([see the
+          repository]) based on its existing server-side code (REST API and database), with supporting documentation. It
+          features
+          routing, rich interactions, several interface views, and a polished user experience.
         </p>
-        <a href="#">See project on GitHub</a>
+        <a href="https://github.com/decisiveHoneyBadger/myFlix-Angular-client/tree/6.5" target="_blank">See project on
+          GitHub</a>
       </div>
 
       <div class="grid__item">
-        <h2>Native MacOS application</h2>
+        <h2>myFlix-client</h2>
         <p>
-         Within this project, I was responsible for the frontend. It is written in JavaFX.
+          myFlix-client is the frontend-side of a movies web application. The application provides users with access to
+          information about different movies, their directors and the movie genre. Users are able to sign up, update
+          their
+          personal information, create a list of their favorite movies and remove movies from their favorite list.
         </p>
-        <a href="#">See project on GitHub</a>
+        <a href="https://github.com/decisiveHoneyBadger/myFlix-client/tree/3.8" target="_blank">See project on
+          GitHub</a>
       </div>
 
       <div class="grid__item">
-        <h2>Node.js pdf generation</h2>
+        <h2>mobile-chat-app</h2>
         <p>
-          Within this project, I created a service that generates pdf out of webpages with the help of a node.js server.
+          It is a chat app for mobile devices using React Native. The app will provide users with a chat interface and
+          options to
+          share images and their location.
         </p>
-        <a href="#">See project on GitHub</a>
+        <a href="https://github.com/decisiveHoneyBadger/mobile-chat-app" target="_blank">See project on GitHub</a>
       </div>
 
       <div class="grid__item">
-        <h2>Styleguide for portfolio page</h2>
+        <h2>meet</h2>
         <p>
-          Here you can find the styleguide I have created for this portfolio page. 
-          It was created with the livingstyleguide gem and grunt. 
+          This app was designed to offer users the opportunity to find out any events taking place in their locations
+          based on the
+          Google Calender API.
         </p>
-        <a href="#">See project on GitHub</a>
+        <a href="https://github.com/decisiveHoneyBadger/meet" target="_blank">See project on GitHub</a>
       </div>
 
       <div class="grid__item">
-        <h2>Medium Blog</h2>
-        <p>
-          I am also writing on medium.com about react.js.
-        </p>
-        <a href="#">See project on GitHub</a>
+        <h2>movie_api</h2>
+        <p>myFlix API is the server-side of a movies web application. The application provides users with access to
+          information about different movies, their directors and the movie genre. Users are able to sign up, update
+          their personal
+          information, create a list of their favorite movies and remove movies from their favorite list.</p>
+        <a href="https://github.com/decisiveHoneyBadger/movie_api" target="_blank">See project on GitHub</a>
       </div>
 
       <div class="grid__item">
-        <h2>Your page?</h2>
+        <h2>simple-js-app</h2>
         <p>
-          I can help in organizing front-end and back-end projects with the foloowing technologies: 
-          React.js, JavaScript, Java, JavaFX, HTML, and CSS. I am also happy to learn other technologies if needed.
+          This Pokédex is a simple web application built with,primarily JavaScript, including HTML and CSS, too. The app
+          retrieves
+          its data from an external API and enables a detailed view of each Pokemon object.
         </p>
-        <a href="#">See project on GitHub</a>
+        <a href="https://github.com/decisiveHoneyBadger/simple-js-app" target="_blank">See project on GitHub</a>
       </div>
     </div>
-</section>
+  </section>
 
-<footer class="page-footer">
-  <p>Find me on</p>
-  <div class="social-media-icons">
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media-icons">
       <!--GitHub icon as external link-->
-    <a href="https://github.com/" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/github-icon.svg"  
-        alt="github icon"
-        width="30"
-        height="30">
-    </a>
-    <!--Twitter icon as an external link-->
-    <a href="https://twitter.com/?lang=en" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/twitter-icon.svg" 
-        alt="twitter icon"
-        width="30"
-        height="30">
-    </a>
-    <!--LinkedIn icon as an external link -->
-    <a href="https://de.linkedin.com/" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/linkedin-icon.svg" 
-        alt="linkedin icon"
-        width="30"
-        height="30">
-    </a>    
-  </div> 
-</footer>
-  
-<script src="js/tota11y.min.js"></script>
+      <a href="https://github.com/" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+      </a>
+      <!--Twitter icon as an external link-->
+      <a href="https://twitter.com/?lang=en" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
+      </a>
+      <!--LinkedIn icon as an external link -->
+      <a href="https://de.linkedin.com/" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
+
 </html>

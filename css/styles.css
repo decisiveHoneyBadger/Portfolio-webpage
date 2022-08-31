@@ -15,7 +15,6 @@
   --orange: #f76414;
 }
 
-
 a {
   color: var(--primary-color);
 }
@@ -31,11 +30,16 @@ nav a:hover color:rgb(210, 175, 255);
 */
 
 body {
-  background-color: var(--white);
-  font-family: 'Sen', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Outfit';
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 a {
@@ -160,18 +164,31 @@ label, .standard-label {
 }
 
 .profile_portrait {
-  float: left;
-  width: 250px;
-  max-width: 400px;
+  display: block;
+  width: 200px;
+  max-width: 300px;
   height: auto;
-  margin-right: 40px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 50%;
+  filter: var(--dark-gray);
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all 0.8s ease-in-out;
 }
+
+.profile_portrait:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+
+
 
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .page-footer {
@@ -186,15 +203,23 @@ label, .standard-label {
   box-sizing: border-box;
 }
 
-.profile_text {
+.profile-text {
   flex: 1 1 100px;
+  text-align: center;
+}
+
+h1, p {
+  text-align: inherit;
 }
 
 .page-header {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 2px solid var(--purple);
+}
+
+h1 {
+  text-align: center;
 }
 
 .page-header_item {
@@ -243,6 +268,7 @@ label, .standard-label {
 
   .grid__item {
     background-color: var(--light-gray);
+    color: var(--black);
     width: auto;
     min-height: auto;
     margin: 0px;
@@ -265,6 +291,7 @@ label, .standard-label {
 
 .contact {
   margin: 10px;
+  text-align: center;
 }
 
 #contact-img {
@@ -308,6 +335,13 @@ section {
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
+  }
+
+  @media all and (max-width: 600px) {
+    body {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   .grid__item:last-child {

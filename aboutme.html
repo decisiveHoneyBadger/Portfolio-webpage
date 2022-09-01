@@ -14,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Auto width -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -26,11 +31,11 @@
       </label>
 
       <ul class="menu__box" role="menubar">
-        <li role="presentation"><a class="menu__item" role="menuitem" href="/portfolio-website/index.html">Home</a></li>
-        <li role="presentation"><a class="menu__item" role="menuitem" href="/portfolio-website/aboutme.html">About
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/index.html">Home</a></li>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/aboutme.html">About
             Me</a>
-        <li role="presentation"><a class="menu__item" role="menuitem" href="/portfolio-website/work.html">Work</a></li>
-        <li role="presentation"><a class="menu__item" role="menuitem" href="/portfolio-website/contact.html">Contact</a>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/work.html">Work</a></li>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -42,9 +47,22 @@
     </div>
   </header>
 
+
+
   <section class="aboutme-section">
     <h1>About me</h1>
-    <p>This page is about myself. This is what I enjoy doing:</p>
+
+    <img src="img/crazy-self-portrait-maciej-mackiewicz.jpg" id="crazy-guy" alt="crazy portrait of a men">
+    <section>
+      <p><q>I never imagined becoming a frontend developer. But imagination encircles the world as Einstein
+          used to put
+          it...</q>
+      </p>
+    </section>
+
+
+
+    <p>Technologies:</p>
     <ul id="hobbies">
       <li>Front-end development</li>
       <li>Back-end development</li>
@@ -52,7 +70,11 @@
       <li>Climbing</li>
     </ul>
 
-    <a href="files/cv.pdf" class="button" download>Download my CV</a>
+    <a href="files/cv.pdf" class="buttson" download>
+      <button class="btn"><i class="fa fa-download"></i>
+        Download my CV</button>
+    </a>
+
   </section>
 
   <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto"
@@ -1378,15 +1400,16 @@
 
   <div class="page-footer-container">
     <footer class="page-footer">
-      <a href="https://github.com/" target="_blank" title="external link" rel="nofollow">
+      <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
         <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
       </a>
       <!--Twitter icon as an external link-->
-      <a href="https://twitter.com/?lang=en" target="_blank" title="external link" rel="nofollow">
+      <a href="https://twitter.com/87_apache" target="_blank" title="external link" rel="nofollow">
         <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
       </a>
       <!--LinkedIn icon as an external link -->
-      <a href="https://de.linkedin.com/" target="_blank" title="external link" rel="nofollow">
+      <a href="https://www.linkedin.com/in/kerem-g%C3%BCvenc-2985ab22b/" target="_blank" title="external link"
+        rel="nofollow">
         <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
       </a>
     </footer>

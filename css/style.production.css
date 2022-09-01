@@ -406,6 +406,10 @@ section {
 
 .personal-logo {
   border-radius: 50%;
+  top: 0;
+  right: 0px;
+  position: relative;
+  margin-top: -8px;
 }
 
 @media all and (max-width: 500px) {
@@ -708,13 +712,16 @@ p.desc-text-work {
   width: auto;
 }
 
-/* #crazy-guy {
-  border-style: none;
-  height: 300px;
+#crazy-guy {
+  height: 35vh;
   float: left;
   border-radius: 8px;
+  border-style: solid;
+  margin-right: 20px;
 }
 
 h2 {
   font-size: 35px;
-} */
+}
+
+*/

@@ -1,148 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
-  <link
-    rel="shortcut icon"
-    href="./img/ico/favicon.ico"
-    type="image/x-icon"/>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" 
-    rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work</title>
+  <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html">
-      <img src="./img/svg/icons/logo-kg.svg"  
-      alt="personal logo of Kerem Guevenc" class="personal-logo"
-      width="150" height="150">
-    </a>
-        
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html"
-            role="menuitem"
-            class="navigation-list__item navigation-list__item">Home</a >
-        </li>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
 
-        <li role="presentation">
-          <a href="aboutme.html" 
-          role="menuitem"
-          class="navigation-list__item navigation-list__item">About me</a>
-        </li>
-
-        <li role="presentation">
-          <a href="work.html" role="menuitem" 
-          class="navigation-list__item navigation-list__item--active">Work</a>
-        </li>
-
-        <li role="presentation">
-          <a href="contact.html" 
-          role="menuitem" 
-          class="navigation-list__item navigation-list__item">Contact</a>
+      <ul class="menu__box" role="menubar">
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/index.html">Home</a></li>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/aboutme.html">About
+            Me</a>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/work.html">Work</a></li>
+        <li role="presentation"><a class="menu__item" role="menuitem" href="/contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/svg/icons/logo-kg.svg" alt="personal logo of Kerem Guevenc" class="personal-logo" width="120"
+          height="120" />
+      </a>
+    </div>
   </header>
 
   <section>
     <h1>Work</h1>
     <div class="grid">
-    <!-- Grid items will live here -->
+      <!-- Grid items will live here -->
       <div class="grid__item">
-        <h2>Mobile web app</h2>
-        <p>
-          Within this project, I was responsible for the frontend. It is written in React.js.
-          Additionally, I've created the HTML and CSS templates.
+        <h2>myFlix-Angular-client</h2>
+        <p class="desc-text-work">
+          This single-page, responsive application (SPA) is the client-side for an application called myFlix ([see the
+          repository]) based on its existing server-side code (REST API and database), with supporting documentation. It
+          features
+          routing, rich interactions, several interface views, and a polished user experience.
         </p>
-        <a href="#">See project on GitHub</a>
+        <div class="card_image_container">
+          <img src="img/image-1.png" class="grid_project_images" alt="Screenshot of myFlix-Angular-client" />
+        </div>
+        <p>TypeScript/SCSS/
+          HTML/Angular(Material)
+        </p>
+        <div>
+          <a href="https://github.com/decisiveHoneyBadger/myFlix-Angular-client/tree/6.5" target="_blank"
+            title="external link" rel="nofollow">
+            <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+          </a>
+          <div>
+            <button
+              onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>Native MacOS application</h2>
-        <p>
-         Within this project, I was responsible for the frontend. It is written in JavaFX.
+        <h2>simple-js-app</h2>
+        <p class="desc-text-work">
+          This Pokédex is a simple web application built with,primarily JavaScript, including HTML and CSS, too. The app
+          retrieves
+          its data from an external API and enables a detailed view of each Pokemon object.
         </p>
-        <a href="#">See project on GitHub</a>
+
+        <div class="card_image_container">
+          <img src="img/image-2.png" class="grid_project_images" alt="Screenshot of simple-js-app" width="200"
+            height="200" />
+        </div>
+
+
+        <p>JavaScript/jQuery/
+          CSS/Bootstrap/HTML/</p>
+
+        <a href="https://github.com/decisiveHoneyBadger/simple-js-app" target="_blank" title="external link"
+          rel="nofollow">
+          <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+        </a>
+
+        <div>
+          <button onclick="window.location.href = 'https://decisivehoneybadger.github.io/simple-js-app/';">Live
+          </button>
+
+
+        </div>
+      </div>
+
+
+
+
+      <div class="grid__item">
+        <h2>myFlix-client</h2>
+        <p class="desc-text-work">
+          myFlix-client is the frontend-side of a movies web application. The application provides users with access
+          to
+          information about different movies, their directors and the movie genre. Users are able to sign up, update
+          their
+          personal information, create a list of their favorite movies and remove movies from their favorite list.
+        </p>
+        <div class="card_image_container">
+          <img src="img/my-flix-client-2.png" class="grid_project_images" alt="Screenshot of myFlix-client" />
+        </div>
+        <p>JavaScript/React
+          React-Redux/
+          React-Bootstrap/Parcel</p>
+        <a href="https://github.com/decisiveHoneyBadger/myFlix-client/tree/3.8" target="_blank" title="external link"
+          rel="nofollow">
+          <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+        </a>
+
+        <div>
+          <button onclick="window.location.href = 'https://myflix-cinema.netlify.app'">Live
+          </button>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>Node.js pdf generation</h2>
-        <p>
-          Within this project, I created a service that generates pdf out of webpages with the help of a node.js server.
+        <h2>mobile-chat-app</h2>
+        <p class="desc-text-work">
+          It is a chat app for mobile devices using React Native. The app will provide users with a chat interface and
+          options to
+          share images and their location.
         </p>
-        <a href="#">See project on GitHub</a>
+        <div class="card_image_container">
+          <img src="img/chat.png" id="mobile-image" class="" alt="Screenshot of myFlix-client" />
+        </div>
+        <p>React Native/Expo/
+          Android Studio/Firebase (Google Cloud)
+          Gifted Chat</p>
+        <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
+          <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+        </a>
+        <div>
+          <button
+            onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
+          </button>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>Styleguide for portfolio page</h2>
-        <p>
-          Here you can find the styleguide I have created for this portfolio page. 
-          It was created with the livingstyleguide gem and grunt. 
+        <h2>meet</h2>
+        <p class="desc-text-work">
+          This app was designed to offer users the opportunity to find out any events taking place in their locations
+          based on the
+          Google Calender API.
         </p>
-        <a href="#">See project on GitHub</a>
+        <div class="card_image_container">
+          <img src="img/4.9-meet-app.png" class="grid_project_images" alt="Screenshot of meet" width="200"
+            height="200" />
+        </div>
+        <p>JavaScript/CSS/<br>
+          /HTML/React/
+          Jest/Enzyme/Puppeteer/
+          Cucumber/Recharts
+        </p>
+        <div>
+          <a href="https://github.com/decisiveHoneyBadger/meet" target="_blank" title="external link"
+            rel="nofollow"></a>
+          <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30">
+        </div>
+        <div>
+          <button onclick="window.location.href = 'https://decisivehoneybadger.github.io/meet/';">Live
+          </button>
+        </div>
       </div>
 
-      <div class="grid__item">
-        <h2>Medium Blog</h2>
-        <p>
-          I am also writing on medium.com about react.js.
-        </p>
-        <a href="#">See project on GitHub</a>
-      </div>
 
       <div class="grid__item">
-        <h2>Your page?</h2>
-        <p>
-          I can help in organizing front-end and back-end projects with the foloowing technologies: 
-          React.js, JavaScript, Java, JavaFX, HTML, and CSS. I am also happy to learn other technologies if needed.
+        <h2>movie_api</h2>
+        <p class="desc-text-work">myFlix API is the server-side of a movies web application. The application provides
+          users
+          with access to
+          information about different movies, their directors and the movie genre. Users are able to sign up, update
+          their personal
+          information, create a list of their favorite movies and remove movies from their favorite list.
         </p>
-        <a href="#">See project on GitHub</a>
+        <div class="card_image_container">
+
+        </div>
+        <p>JavaScript/Node.js
+          Express/</p>
+        <div>
+          <a href="https://github.com/decisiveHoneyBadger/movie_api" target="_blank" title="external link">
+            <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30"> </a>
+        </div>
+        <div>
+          <button
+            onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
+          </button>
+        </div>
       </div>
     </div>
-</section>
+  </section>
 
-<footer class="page-footer">
-  <p>Find me on</p>
-  <div class="social-media-icons">
-      <!--GitHub icon as external link-->
-    <a href="https://github.com/" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/github-icon.svg"  
-        alt="github icon"
-        width="30"
-        height="30">
-    </a>
-    <!--Twitter icon as an external link-->
-    <a href="https://twitter.com/?lang=en" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/twitter-icon.svg" 
-        alt="twitter icon"
-        width="30"
-        height="30">
-    </a>
-    <!--LinkedIn icon as an external link -->
-    <a href="https://de.linkedin.com/" target="_blank"
-    title="external link" rel="nofollow"> 
-      <img src="img/svg/icons/linkedin-icon.svg" 
-        alt="linkedin icon"
-        width="30"
-        height="30">
-    </a>    
-  </div> 
-</footer>
-  
-<script src="js/tota11y.min.js"></script>
+  <div class="page-footer-container">
+    <footer class="page-footer">
+      <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+      </a>
+      <!--Twitter icon as an external link-->
+      <a href="https://twitter.com/87_apache" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
+      </a>
+      <!--LinkedIn icon as an external link -->
+      <a href="https://www.linkedin.com/in/kerem-g%C3%BCvenc-2985ab22b/" target="_blank" title="external link"
+        rel="nofollow">
+        <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
+      </a>
+    </footer>
+  </div>
+
+  <script src="js/tota11y.min.js"></script>
 </body>
+
 </html>

@@ -715,7 +715,7 @@ p.desc-text-work {
 #crazy-guy {
   height: 35vh;
   float: left;
-  border-radius: 8px;
+  border-radius: 1em;
   border-style: solid;
   margin-right: 20px;
 }

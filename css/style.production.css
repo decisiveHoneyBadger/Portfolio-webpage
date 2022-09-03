@@ -20,7 +20,7 @@ nav a:hover color:rgb(210, 175, 255);
 */
 
 body {
-  background-color: #000000;
+  background-color: #006677;
   color: #FFFFFF;
   font-family: 'Outfit';
   font-weight: 400;
@@ -260,7 +260,7 @@ label, .standard-label {
 
 h1, p {
   text-align: inherit;
-  font-size: 26px;
+  /* font-size: 26px; */
 }
 
 .page-header {
@@ -308,12 +308,13 @@ h1 {
 .grid__item {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: auto;
   height: auto;
+  justify-content: space-between;
 }
 
 .card_image_container {
-  height: 300px;
+  height: 200px;
 }
 
 #mobile-image {
@@ -333,7 +334,8 @@ h1 {
     display: grid;
     /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: minmax(0, 1fr);
     grid-gap: 20px;
     margin: 0px;
     padding: 10px;
@@ -344,13 +346,13 @@ h1 {
     background-color: #dddddd;
     color: #ffffff;
     width: auto;
-    min-height: auto;
+    /* height: auto; */
     margin: 0px;
     padding: 15px;
     border-style: outset;
     border-width: thick;
     background-image: linear-gradient(to bottom, #000000, #808080 20%);
-    border-radius: 10%;
+    /* border-radius: 10%; */
   }
 
   /* uncomment below code to see what happens */
@@ -416,6 +418,11 @@ section {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+
+  h1 {
+    font-size: 6vw !important;
   }
 }
 
@@ -423,6 +430,19 @@ section {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+
+  h1 {
+    font-size: 6vw !important;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1200px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: minmax(0, 1fr);
   }
 }
 
@@ -430,23 +450,21 @@ section {
   .grid {
     grid-gap: 10px;
   }
+}
 
-  @media all and (max-width: 600px) {
-    body {
-      width: 100%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
+@media all and (max-width: 600px) {
+  body {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+}
 
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-
+.grid__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
 }
 
 
@@ -551,34 +569,14 @@ button {
 
 .aboutme-section {
   text-align: center;
+
+  flex: 1 1 100px;
+  text-align: center;
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+.aboutme-content {
+  display: flex;
+  direction: row;
 }
 
 .sun {
@@ -693,7 +691,7 @@ h1#welcome-message {
 
 p.desc-text-work {
   height: 450px;
-  font-size: 26px;
+  /* font-size: 26px; */
 }
 
 .get_connected {
@@ -721,7 +719,5 @@ p.desc-text-work {
 }
 
 h2 {
-  font-size: 35px;
+  /* font-size: 35px; */
 }
-
-*/

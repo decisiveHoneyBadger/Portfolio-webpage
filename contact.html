@@ -44,55 +44,60 @@
 
   <div class="contact">
     <h1>contact</h1>
-    <div>
-      Kerem Guevenc<br />
-      Billsedter Muehlenweg 1<br />
-      22117 Hamburg<br />
-      Germany<br />
-      <br />
 
-      <div class="contact-form">
-        <!-- contact-form (as edifice) has one ID because it appears once on the entire webpage, 
+    <figure>
+      <img
+        src="https://media3.giphy.com/media/g0tp9K3OQpvAepwtd5/giphy.gif?cid=790b761172a25a1ea9e55479660457a89c4e09b72638420a&rid=giphy.gif&ct=g"
+        alt="A computer is used to send an email" />
+    </figure>
+
+
+    <div class="contact-form">
+      <!-- contact-form (as edifice) has one ID because it appears once on the entire webpage, 
         while the labels have all the same class. This makes it a lot easier to 
         to edit, style, or manipulate these labels and the ID itself later all at once using
         CSS or JavaScript  -->
-        <h3><b>Contact me to discuss your ideas</b></h3>
-        <form action="method" id="contact-form">
-          <div class="label-text"></div>
-          <label class="standard-label" for="contact-email">Email: </label><br />
-          <input type="email" id="contact-email" required /> <br />
+      <article class="contact-message">
+        <p>Wanna get me hired or have a cool idea in your mind?
+          Let’s talk about it! </p>
+      </article>
+      <form action="method" id="contact-form">
+        <div class="label-text"></div>
+        <label class="standard-label" for="contact-email">Email: </label><br />
+        <input type="email" id="contact-email" required /> <br />
 
-          <label class="standard-label" for="contact-telephone">Telephone:</label><br />
-          <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-          <br />
-          <label class="standard-label" for="contact-text-message">Message:</label><br />
-          <textarea required maxlength="240" id="contact-text-message"></textarea><br />
-          <p id="contact-formInfoText">
-            * The <b>e-mail</b> and the <b>Message </b>
-            are required for submission
-          </p>
-          <button id="submit-button" type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
+        <label class="standard-label" for="contact-telephone">Telephone:</label><br />
+        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+        <br />
 
-    <div class="page-footer-container">
-      <footer class="page-footer">
-        <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
-          <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
-        </a>
-        <!--Twitter icon as an external link-->
-        <a href="https://twitter.com/87_apache" target="_blank" title="external link" rel="nofollow">
-          <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
-        </a>
-        <!--LinkedIn icon as an external link -->
-        <a href="https://www.linkedin.com/in/kerem-g%C3%BCvenc-2985ab22b/" target="_blank" title="external link"
-          rel="nofollow">
-          <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
-        </a>
-      </footer>
+        <label class="standard-label" for="contact-text-message">Message:</label><br />
+        <textarea required maxlength="240" id="contact-text-message"></textarea><br />
+        <p id="contact-formInfoText">
+          * The <b>e-mail</b> and the <b>Message </b>
+          are required for submission
+        </p>
+        <button id="submit-button" type="submit">Submit</button>
+      </form>
     </div>
-    <script src="js/tota11y.min.js"></script>
+  </div>
+
+  <div class="page-footer-container">
+    <footer class="page-footer">
+      <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+      </a>
+      <!--Twitter icon as an external link-->
+      <a href="https://twitter.com/87_apache" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
+      </a>
+      <!--LinkedIn icon as an external link -->
+      <a href="https://www.linkedin.com/in/kerem-g%C3%BCvenc-2985ab22b/" target="_blank" title="external link"
+        rel="nofollow">
+        <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
+      </a>
+    </footer>
+  </div>
+  <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>

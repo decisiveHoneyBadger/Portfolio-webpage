@@ -19,3 +19,28 @@ body {
     transition: 0.3s;
     border-radius: 32rem 8rem;
 }
+
+#contact-message {
+    font-size: 3rem;
+    color: white;
+    border-radius: 2rem 12rem;
+    padding: 2rem 5rem;
+    margin: 2rem 2rem;
+    background-color: #272424;
+    border: solid 2px;
+    width: 75%;
+}
+
+.page-footer {
+    padding: 20px 0 20px 0;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+}

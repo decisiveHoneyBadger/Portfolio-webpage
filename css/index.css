@@ -233,7 +233,7 @@ label, .standard-label {
 
 .page-footer {
     padding: 20px 0 20px 0;
-    background: #303030;
+    background: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,7 +243,6 @@ label, .standard-label {
     text-align: center;
     flex-direction: row;
     justify-content: space-around;
-    background-image: linear-gradient(to top, #ffffff, #000000 85%);
 }
 
 * {

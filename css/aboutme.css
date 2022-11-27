@@ -231,7 +231,7 @@ label, .standard-label {
 
 .page-footer {
     padding: 20px 0 20px 0;
-    background: #303030;
+    background: #ffffff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,7 +241,6 @@ label, .standard-label {
     text-align: center;
     flex-direction: row;
     justify-content: space-around;
-    background-image: linear-gradient(to top, #ffffff, #000000 85%);
 }
 
 * {
@@ -795,9 +794,14 @@ p.desc-text-work {
 }
 
 .summary {
-    background-image: linear-gradient(45deg, transparent, #4169E1, #000080);
+    background-color: #000080;
     border-radius: 25px;
     padding: 5px 10px;
     margin: 5px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+}
+
+#project-link {
+    color: #ffff00;
+    text-decoration: none;
 }

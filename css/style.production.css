@@ -749,3 +749,37 @@ p.desc-text-work {
   border: solid 2px;
   width: 75%;
 }
+
+#angular-img {
+  width: 50%;
+  height: 20%;
+}
+
+.section-header {
+  font-size: 3rem;
+  color: #ffa500;
+}
+
+#credits-list {
+  list-style: none;
+}
+
+.section {
+  background-color: #212121;
+  border-radius: 4rem;
+  padding: 0.5rem 1.5rem;
+  margin: 4rem 4rem;
+}
+
+.section-text, #credits-list {
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+}
+
+#angular-header {
+  font-size: 3.5rem;
+  color: #ffa500;
+  text-shadow: 0.125rem 0.125rem 0.125rem #f5f5dc;
+}

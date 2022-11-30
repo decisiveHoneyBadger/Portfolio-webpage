@@ -706,6 +706,7 @@ p.desc-text-work {
   background-color: #ffa500;
   background-image: linear-gradient(45deg, transparent, #c93030);
   color: white;
+  border-radius: 2rem;
 }
 
 .btn {
@@ -722,16 +723,22 @@ p.desc-text-work {
 }
 
 #submit-button {
-  margin: 10px;
+  margin: 0.625rem;
+  background-color: #ffa500;
+  color: #000000;
+}
+
+#submit-button:hover {
+  background-color: #000000;
+  color: #ffa500;
+  border-radius: 2rem;
 }
 
 #contact-form {
-  background-image: linear-gradient(45deg, #ffa500, purple, transparent);
-  margin: 22rem;
-  padding: 10px;
-  box-shadow: 3px 2px 13px #ffffff;
-  transition: 0.3s;
-  border-radius: 32rem 8rem;
+  background-image: linear-gradient(45deg, orchid, transparent);
+  border-radius: 4rem;
+  padding: 2rem;
+  margin: 2rem 6rem;
 }
 
 #project-link {
@@ -739,15 +746,27 @@ p.desc-text-work {
   text-decoration: none;
 }
 
-#contact-message {
+.contact-container {
+  border-radius: 4rem;
+  background-color: #212121;
+  padding: 1.5rem 6.5rem;
+  margin: 4rem 8rem;
+  width: auto;
+}
+
+#contact-header {
   font-size: 3rem;
-  color: white;
-  border-radius: 2rem 12rem;
-  padding: 2rem 5rem;
-  margin: 2rem 2rem;
-  background-color: #272424;
-  border: solid 2px;
-  width: 75%;
+  color: #ffa500;
+}
+
+#contact-text {
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 1rem 0.5rem;
+  margin: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #angular-img {

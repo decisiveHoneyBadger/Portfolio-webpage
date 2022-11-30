@@ -718,6 +718,7 @@ p.desc-text-work {
     background-color: #ffa500;
     background-image: linear-gradient(to bottom, transparent, #c93030);
     color: white;
+    border-radius: 2rem;
 }
 
 .btn {

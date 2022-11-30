@@ -267,8 +267,8 @@ h1 {
   }
 
   .grid__item {
-    background-color: var(--light-gray);
-    color: var(--black);
+    background-color: #000000;
+    color: var(--white);
     width: auto;
     min-height: auto;
     margin: 0px;

@@ -567,17 +567,11 @@ button {
   list-style-type: none;
 }
 
-.aboutme-section {
-  text-align: center;
 
-  flex: 1 1 100px;
-  text-align: center;
-}
 
-.aboutme-content {
-  display: flex;
-  direction: row;
-}
+
+
+
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
@@ -713,13 +707,27 @@ p.desc-text-work {
   width: auto;
 }
 
+#cv-button {
+  margin: 2rem;
+  padding: 1rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#cv-button:hover {
+  background-color: #000000;
+  color: #ffa500;
+  border-radius: 2rem;
+}
+
 #crazy-guy {
-  height: 35vh;
-  float: left;
-  border-radius: 1em;
-  border-style: solid;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  height: 50vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 #submit-button {
@@ -739,11 +747,19 @@ p.desc-text-work {
   border-radius: 4rem;
   padding: 2rem;
   margin: 2rem 6rem;
+  text-align: center;
 }
 
 #project-link {
-  color: #ffff00;
+  color: #ffa500;
   text-decoration: none;
+}
+
+#summary-header {
+  font-size: 3rem;
+  color: #ffa500;
+  margin: 1rem;
+  text-align: center;
 }
 
 .contact-container {
@@ -757,6 +773,7 @@ p.desc-text-work {
 #contact-header {
   font-size: 3rem;
   color: #ffa500;
+  text-align: center;
 }
 
 #contact-text {
@@ -769,14 +786,18 @@ p.desc-text-work {
   text-align: center;
 }
 
-#angular-img {
+.angular-img {
   width: 50%;
-  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
 }
 
 .section-header {
   font-size: 3rem;
   color: #ffa500;
+  text-align: center;
 }
 
 #credits-list {
@@ -790,21 +811,30 @@ p.desc-text-work {
   margin: 4rem 4rem;
 }
 
-.section-text, #credits-list {
+.section-text {
   font-size: 1.8rem;
   text-align: justify;
   padding: 1rem 1.5rem;
   margin: 2rem;
 }
 
+#credits-list {
+  font-size: 1.8rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
 #angular-header {
   font-size: 3.5rem;
   color: #ffa500;
   text-shadow: 0.125rem 0.125rem 0.125rem #f5f5dc;
+  text-align: center;
 }
 
 .grid_header {
   color: orange;
+  text-align: center;
 }
 
 .button-container {
@@ -812,10 +842,40 @@ p.desc-text-work {
   border-radius: 1rem;
   padding: 0.5rem;
   margin: 0.5rem;
+  text-align: center;
 }
 
 .desc-text-work {
   text-align: justify;
   margin: 0.5rem;
   padding: 0.5rem;
+}
+
+.grid_items_button {
+  margin: 1rem;
+  padding: 0.625rem;
+}
+
+.grid_items_button:hover {
+  background-color: #ffa500;
+  color: #000000;
+  border-radius: 3rem;
+  margin: 1rem;
+  padding: 0.625rem;
+}
+
+.figcaption {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.938rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
 }

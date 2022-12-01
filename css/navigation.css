@@ -66,6 +66,7 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     background-image: linear-gradient(to bottom, #ffffff, #bbbbbb 50%);
+    text-align: center;
 }
 
 .menu__item {

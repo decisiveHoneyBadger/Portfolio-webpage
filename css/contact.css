@@ -7,6 +7,10 @@ body {
     background-image: linear-gradient(45deg, transparent, #808080, #000000);
 }
 
+.figcaption {
+    ç
+}
+
 #submit-button {
     margin: 0.625rem;
     background-color: #ffa500;
@@ -24,6 +28,7 @@ body {
     border-radius: 4rem;
     padding: 2rem;
     margin: 2rem 6rem;
+    text-align: center;
 }
 
 
@@ -38,13 +43,8 @@ body {
 #contact-header {
     font-size: 3rem;
     color: #ffa500;
+    text-align: center;
 }
-
-
-
-
-
-
 
 #contact-text {
     font-size: 1.8rem;

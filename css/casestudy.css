@@ -1,11 +1,15 @@
-#angular-img {
+.angular-img {
     width: 50%;
-    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
 }
 
 .section-header {
     font-size: 3rem;
     color: #ffa500;
+    text-align: center;
 }
 
 #credits-list {
@@ -19,15 +23,24 @@
     margin: 4rem 4rem;
 }
 
-.section-text, #credits-list {
+.section-text {
     font-size: 1.8rem;
     text-align: justify;
     padding: 1rem 1.5rem;
     margin: 2rem;
+    text-align: center;
+}
+
+#credits-list {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    margin: 2rem;
+    text-align: center;
 }
 
 #angular-header {
     font-size: 3.5rem;
     color: #ffa500;
     text-shadow: 0.125rem 0.125rem 0.125rem #f5f5dc;
+    text-align: center;
 }

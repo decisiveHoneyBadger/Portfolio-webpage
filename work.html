@@ -14,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Microbe&family=Space+Mono&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -45,9 +50,10 @@
   <section>
     <h1>Work</h1>
     <figure>
-      <img
+      <img class="gif"
         src="https://media0.giphy.com/media/SYHz66JfYHbBtZXjHy/giphy.gif?cid=790b7611e902b37187d9de3c59cf86b49ecebbccf983600b&rid=giphy.gif&ct=g"
         alt="a retro look of a computer symbolizing productivity">
+      <figcaption class="figcaption">Digital skills are doable for everyone</figcaption>
     </figure>
 
     <div class="grid">
@@ -55,6 +61,11 @@
       <div class="grid__item">
         <div>
           <h2 class="grid_header">myFlix-Angular-client</h2>
+
+          <figure class="card_image_container">
+            <img src="img/image-1.png" class="grid_project_images" alt="Screenshot of myFlix-Angular-client" />
+          </figure>
+
           <p class="desc-text-work">
             This responsive single page application (SPA) is the client-side Angular version of myFlix-client. The
             server-side code (REST API and database) comes from the project <em>movie_api</em> with supporting
@@ -64,9 +75,7 @@
 
           </p>
         </div>
-        <figure class="card_image_container">
-          <img src="img/image-1.png" class="grid_project_images" alt="Screenshot of myFlix-Angular-client" />
-        </figure>
+
 
         <div class="button-container">
           <p>TypeScript/SCSS/
@@ -79,50 +88,25 @@
             <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
           </a>
           <div>
-            <button onclick="window.location.href = href='casestudy.html';">case
+            <button class="grid_items_button" onclick="window.location.href = href='casestudy.html';">case
               study
             </button>
-            <button
+            <button class="grid_items_button"
               onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
             </button>
           </div>
         </div>
       </div>
 
+
       <div class="grid__item">
         <div>
-          <h2 class="grid_header">simple-js-app</h2>
-          <p class="desc-text-work">
-            This Pokédex is a simple web application built primarily with JavaScript. The
-            app retrieves
-            its data from an external API and enables a detailed view of each clicked Pokemon object.
-          </p>
+          <h2 class="grid_header">myFlix-React-client</h2>
           <figure class="card_image_container">
-            <img src="img/image-2.png" class="grid_project_images" alt="Screenshot of simple-js-app" width="200"
-              height="200" />
+            <img src="img/my-flix-client-2.png" class="grid_project_images" alt="Screenshot of myFlix-client" />
           </figure>
-        </div>
 
 
-        <div class="button-container">
-          <p>JavaScript/jQuery/
-            CSS/Bootstrap/HTML/</p>
-
-          <a href="https://github.com/decisiveHoneyBadger/simple-js-app" target="_blank" title="external link"
-            rel="nofollow">
-            <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
-          </a>
-
-          <div>
-            <button onclick="window.location.href = 'https://decisivehoneybadger.github.io/simple-js-app/';">Live
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid__item">
-        <div>
-          <h2 class="grid_header">myFlix-client</h2>
           <p class="desc-text-work">
             <em>myFlix-client</em> is the frontend-side of <em>movie_api</em>, a self-built database for movies. It
             provides users with access to
@@ -134,9 +118,11 @@
           </p>
 
         </div>
-        <figure class="card_image_container">
-          <img src="img/my-flix-client-2.png" class="grid_project_images" alt="Screenshot of myFlix-client" />
-        </figure>
+
+
+
+
+
         <div class="button-container">
 
           <p>JavaScript/React
@@ -148,52 +134,68 @@
           </a>
 
           <div>
-            <button onclick="window.location.href = 'https://myflix-cinema.netlify.app'">Live
+            <button class="grid_items_button" onclick="window.location.href = 'https://myflix-cinema.netlify.app'">Live
             </button>
           </div>
         </div>
 
       </div>
 
+
+
       <div class="grid__item">
         <div>
           <h2 class="grid_header">mobile-chat-app</h2>
+          <figure class="card_image_container">
+            <img src="img/chat.png" id="mobile-image" class="" alt="Screenshot of myFlix-client" />
+          </figure>
+
+
           <p class="desc-text-work">
             It is a chat app for mobile devices using React Native. The app provides users with a chat interface and
             options to
             share images and their location.
           </p>
         </div>
-        <figure class="card_image_container">
-          <img src="img/chat.png" id="mobile-image" class="" alt="Screenshot of myFlix-client" />
-        </figure>
+
+
+
+
+
         <div class="button-container">
           <p>React Native/Expo/
-            Android Studio/Firebase (Google Cloud)
+            Android Studio/Firebase/
             Gifted Chat</p>
           <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
             <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
           </a>
           <div>
-            <button
+            <button class="grid_items_button"
               onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
             </button>
           </div>
         </div>
       </div>
+
+
+
       <div class="grid__item">
         <div>
           <h2 class="grid_header">meet</h2>
+          <figure class="card_image_container">
+            <img src="img/4.9-meet-app.png" class="grid_project_images" alt="Screenshot of meet" width="200"
+              height="200" />
+          </figure>
+
           <p class="desc-text-work">
             This event app enables users to find out any events taking place according to their
             location
             based on the
             Google Calender API.
           </p>
-          <figure class="card_image_container">
-            <img src="img/4.9-meet-app.png" class="grid_project_images" alt="Screenshot of meet" width="200"
-              height="200" />
-          </figure>
+
+
+
         </div>
 
         <div class="button-container">
@@ -208,16 +210,76 @@
             <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30">
           </div>
           <div>
-            <button onclick="window.location.href = 'https://decisivehoneybadger.github.io/meet/';">Live
+            <button class="grid_items_button"
+              onclick="window.location.href = 'https://decisivehoneybadger.github.io/meet/';">Live
             </button>
           </div>
         </div>
       </div>
 
 
+
+
+
+
+
+
+      <div class="grid__item">
+        <div>
+          <h2 class="grid_header">simple-js-app</h2>
+          <figure class="card_image_container">
+            <img src="img/image-2.png" class="grid_project_images" alt="Screenshot of simple-js-app" width="200"
+              height="200" />
+          </figure>
+
+
+
+          <p class="desc-text-work">
+            This Pokédex is a simple web application built primarily with JavaScript. The
+            app retrieves
+            its data from an external API and enables a detailed view of each clicked Pokemon object.
+          </p>
+
+
+
+        </div>
+
+
+        <div class="button-container">
+          <p>JavaScript/jQuery/
+            CSS/Bootstrap/HTML/</p>
+
+          <a href="https://github.com/decisiveHoneyBadger/simple-js-app" target="_blank" title="external link"
+            rel="nofollow">
+            <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
+          </a>
+
+          <div>
+            <button class="grid_items_button"
+              onclick="window.location.href = 'https://decisivehoneybadger.github.io/simple-js-app/';">Live
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="grid__item">
         <div>
           <h2 class="grid_header">movie_api</h2>
+
+
+
           <p class="desc-text-work"><em>movie_api</em> is the server-side code of a movies web application. The
             application
             provides
@@ -240,7 +302,7 @@
               <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30"> </a>
           </div>
           <div>
-            <button
+            <button class="grid_items_button"
               onclick="window.location.href = 'https://decisivehoneybadger.github.io/myFlix-Angular-client/welcome';">Live
             </button>
           </div>
@@ -248,20 +310,21 @@
       </div>
     </div>
   </section>
-
   <div class="page-footer-container">
     <footer class="page-footer">
       <a href="https://github.com/decisiveHoneyBadger" target="_blank" title="external link" rel="nofollow">
         <img src="img/svg/icons/github-icon.svg" alt="github icon" width="30" height="30" />
       </a>
-      <!--Twitter icon as an external link-->
-      <a href="https://twitter.com/87_apache" target="_blank" title="external link" rel="nofollow">
-        <img src="img/svg/icons/twitter-icon.svg" alt="twitter icon" width="30" height="30" />
-      </a>
+
       <!--LinkedIn icon as an external link -->
       <a href="https://www.linkedin.com/in/kerem-g%C3%BCvenc-2985ab22b/" target="_blank" title="external link"
         rel="nofollow">
         <img src="img/svg/icons/linkedin-icon.svg" alt="linkedin icon" width="30" height="30" />
+      </a>
+
+      <!--Xing icon as an external link-->
+      <a href="https://www.xing.com/profile/Kerem_Guevenc3/cv" target="_blank" title="external link" rel="nofollow">
+        <img src="img/svg/icons/xing-icon.svg" alt="xing icon" width="30" height="30" />
       </a>
     </footer>
   </div>

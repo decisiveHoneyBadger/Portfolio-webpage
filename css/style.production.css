@@ -29,9 +29,7 @@ body {
   background-image: linear-gradient(45deg, transparent, #808080, #000000);
 }
 
-h3 {
-  font-size: 20px;
-}
+
 
 a {
   color: #357b70;
@@ -59,11 +57,11 @@ texture,
 select,
 button {
   font-family: system-ui;
-  width: 25%;
+  max-width: 100%;
 }
 
 textarea {
-  width: 25%;
+  max-width: 100%;
 }
 
 
@@ -321,10 +319,7 @@ h1 {
   height: 100%;
 }
 
-.grid_project_images {
-  /* height: 400px;
-  object-fit: contain; */
-}
+
 
 /* end grid fallback */
 
@@ -425,6 +420,51 @@ section {
   h1 {
     font-size: 6vw !important;
   }
+
+  .contact-container {
+    border-radius: 2rem;
+    background-color: #212121;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact-header {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0.4rem;
+    color: #ffa500 !important;
+    text-align: center;
+  }
+
+  #contact-text {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+  }
+
+  .figcaption {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem !important;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    max-width: 100%;
+  }
+
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -436,6 +476,23 @@ section {
 
   h1 {
     font-size: 6vw !important;
+  }
+
+  .gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+  }
+
+  .figcaption {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem !important;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    max-width: 100%;
   }
 }
 
@@ -745,10 +802,11 @@ p.desc-text-work {
 
 #contact-form {
   background-image: linear-gradient(45deg, orchid, transparent);
-  border-radius: 4rem;
-  padding: 2rem;
-  margin: 2rem 6rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   text-align: center;
+  max-width: 100%;
 }
 
 #project-link {
@@ -786,27 +844,14 @@ p.desc-text-work {
 }
 
 .contact-container {
-  border-radius: 4rem;
+  border-radius: 2rem;
   background-color: #212121;
-  padding: 1.5rem 6.5rem;
-  margin: 4rem 8rem;
-  width: auto;
-}
-
-#contact-header {
-  font-size: 3rem;
-  color: #ffa500;
-  text-align: center;
-}
-
-#contact-text {
-  font-size: 1.8rem;
-  text-align: justify;
-  padding: 1rem 0.5rem;
-  margin: 2rem 3rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .angular-img {

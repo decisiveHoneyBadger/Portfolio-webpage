@@ -411,7 +411,8 @@ section {
   top: 0;
   right: 0px;
   position: relative;
-  margin-top: -8px;
+  margin-top: 0px;
+  width: 80px;
 }
 
 @media all and (max-width: 500px) {
@@ -760,6 +761,28 @@ p.desc-text-work {
   color: #ffa500;
   margin: 1rem;
   text-align: center;
+}
+
+#abilities {
+  background-color: #2c2727;
+  border-radius: 2rem;
+  padding: 1.2rem;
+  margin: 1.2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+
+.skills-header {
+  font-size: 1.6rem;
+  color: #ffa500;
+  margin: 1rem;
+  text-align: center;
+}
+
+.tech-stack {
+  font-size: 1.3rem;
 }
 
 .contact-container {

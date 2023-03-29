@@ -4,7 +4,6 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
-
 a {
   color: #357b70;
 }
@@ -18,18 +17,14 @@ rgb(255, 165, 0) orange
 nav a:hover color:rgb(210, 175, 255);
 #ffb20a (orange)
 */
-
 body {
   background-color: rgb(0, 0, 255, 0.3);
   color: #FFFFFF;
-  font-family: 'Outfit';
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.6;
   background-image: linear-gradient(45deg, transparent, #808080, #000000);
 }
-
-
 
 a {
   color: #357b70;
@@ -63,8 +58,6 @@ button {
 textarea {
   max-width: 100%;
 }
-
-
 
 button {
   /* overwrites browser defaults and resets the border */
@@ -125,8 +118,6 @@ button:focus {
 .navigation-list__item:hover {
   color: #c358d6;
 }
-
-
 
 .navigation-list__item--active a {
   float: right;
@@ -216,7 +207,6 @@ label, .standard-label {
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.01);
 }
-
 
 .profile {
   max-width: 700px;
@@ -318,8 +308,6 @@ h1 {
 #mobile-image {
   height: 100%;
 }
-
-
 
 /* end grid fallback */
 
@@ -464,7 +452,6 @@ section {
     margin: 0.3rem;
     max-width: 100%;
   }
-
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -525,7 +512,6 @@ section {
   grid-row: auto / auto;
 }
 
-
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
@@ -547,7 +533,6 @@ section {
   -o-transition-property: opacity;
   transition-property: opacity;
 }
-
 
 button {
   /* overwrites browser defaults and resets the border */
@@ -624,12 +609,6 @@ button {
 #hobbies {
   list-style-type: none;
 }
-
-
-
-
-
-
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
@@ -709,17 +688,14 @@ a {
   margin-right: 12px;
 }
 
-
 h1 {
   color: #ffffff;
   text-align: center;
   font-size: 80px;
-  border-width: thick;
-  border-style: solid;
   margin-left: 17%;
   margin-right: 17%;
-  font-style: italic;
   text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
 }
 
 h1#welcome-message {
@@ -779,7 +755,6 @@ p.desc-text-work {
   color: #ffa500;
   border-radius: 2rem;
 }
-
 
 #submit-button {
   margin: 0.625rem;
@@ -891,6 +866,7 @@ p.desc-text-work {
   color: #ffa500;
   text-shadow: 0.125rem 0.125rem 0.125rem #f5f5dc;
   text-align: center;
+  font-family: 'Krona One', sans-serif;
 }
 
 .grid_header {

@@ -22,7 +22,6 @@ nav a:hover color:rgb(210, 175, 255);
 body {
     /* background-color: rgb(0, 0, 255, 0.3); */
     color: #FFFFFF;
-    font-family: 'Outfit';
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
@@ -689,14 +688,15 @@ h1 {
 
 h1#welcome-message {
     font-size: 2.4rem;
-    color: #ffa500;
+    color: white;
     border-width: 0;
     border-style: none;
     margin-left: 0;
     margin-right: 0;
     font-style: normal;
     text-transform: none;
-    text-shadow: 6px -3px 3px #c93030;
+    font-family: 'Krona One', sans-serif;
+
 }
 
 /* .github-link {
@@ -733,7 +733,12 @@ p.desc-text-work {
 
 #hey {
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 8px 10px 6px #ffffff;
+    text-shadow: 2px 3px 6px #ffffff;
     font-size: 2.4rem;
     color: #800080;
+    font-size: 3rem;
+}
+
+#title_text {
+    font-size: 3.5rem;
 }

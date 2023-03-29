@@ -19,6 +19,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Microbe&family=Space+Mono&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,95 +51,102 @@
     <h1>Case study</h1>
     <h2 id="angular-header">myFlix-Angular-client</h2>
 
-    <section class="section">
-        <h3 class="section-header">1. Overview</h3>
-        <p class="section-text">myFlix-Angular-client is a client-side web app, making use of MERN stack. It was
-            originally
-            built with React JS – this one, however, was built with Angular (Material). Users are able to
-            create an account, update their personal data, and create a list of favorite movies, among other things.</p>
-        <figure>
-            <img class="angular-img" src="img/angular-app-2.png" alt="screenshot of the myFlix-Angular-client app">
-            <figcaption class="figcaption">Summary of "Taxi Driver" in a single movie view</figcaption>
-        </figure>
-    </section>
+    <div class="super-section">
+        <section class="section">
+            <h3 class="section-header">1. Overview</h3>
+            <p class="section-text">myFlix-Angular-client is a client-side web app, making use of MERN stack. It was
+                originally
+                built with React JS – this one, however, was built with Angular (Material). Users are able to
+                create an account, update their personal data, and create a list of favorite movies, among other things.
+            </p>
+            <figure>
+                <img class="angular-img" src="img/angular-app-2.png" alt="screenshot of the myFlix-Angular-client app">
+                <figcaption class="figcaption">Summary of "Taxi Driver" in a single movie view</figcaption>
+            </figure>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">2. Context & purpose</h3>
-        <p class="section-text">The app was a project I built as part of CareerFoundry's bootcamp program in web
-            development, being part of the Full-Stack Immersion to demonstrate practice of JavaScript
-            libraries and frameworks, such as React and Angular.</p>
-    </section>
+        <section class="section">
+            <h3 class="section-header">2. Context & purpose</h3>
+            <p class="section-text">The app was a project I built as part of CareerFoundry's bootcamp program in web
+                development, being part of the Full-Stack Immersion to demonstrate practice of JavaScript
+                libraries and frameworks, such as React and Angular.</p>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">3. Objective</h3>
-        <p class="section-text">The aim was to take the next step in frontend technologies add this Angular project to
-            my professional portfolio on GitHub.</p>
-    </section>
+        <section class="section">
+            <h3 class="section-header">3. Objective</h3>
+            <p class="section-text">The aim was to take the next step in frontend technologies add this Angular project
+                to
+                my professional portfolio on GitHub.</p>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">4. Method</h3>
-        <p class="section-text">Before getting hands-on on the client side with Angular, I created a REST-API applying
-            Node.js and Express that are connected with MongoDB to form a databse. The API are accessed
-            via commonly-used HTTP requests (GET, POST, PUT, CREATE). In order to retrieve from
-            and store data, on the other hand, CRUD methods (CREATE, READ, UPDATE, DELETE) are
-            applied. The API provides data (objects) about movies in JSON format.<br><br>
-            In order to ensure the functionality of the API, Postman was used to conduct tests for API endpoints.
-            Moreover, I included additional code for user authentication (HTTP and JWT token) and
-            authorization being essential measures for user privacy and security .</p>
-        <figure>
-            <img class="angular-img" src="img/1.4-job-pre-course-postman.png" alt="screenshot of endpoints testing">
-            <figcaption class="figcaption">Endpoint testing with <em>Postman</em></figcaption>
-        </figure>
-    </section>
+        <section class="section">
+            <h3 class="section-header">4. Method</h3>
+            <p class="section-text">Before getting hands-on on the client side with Angular, I created a REST-API
+                applying
+                Node.js and Express that are connected with MongoDB to form a databse. The API are accessed
+                via commonly-used HTTP requests (GET, POST, PUT, CREATE). In order to retrieve from
+                and store data, on the other hand, CRUD methods (CREATE, READ, UPDATE, DELETE) are
+                applied. The API provides data (objects) about movies in JSON format.<br><br>
+                In order to ensure the functionality of the API, Postman was used to conduct tests for API endpoints.
+                Moreover, I included additional code for user authentication (HTTP and JWT token) and
+                authorization being essential measures for user privacy and security .</p>
+            <figure>
+                <img class="angular-img" src="img/1.4-job-pre-course-postman.png" alt="screenshot of endpoints testing">
+                <figcaption class="figcaption">Endpoint testing with <em>Postman</em></figcaption>
+            </figure>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">5. Angular</h3>
-        <p class="section-text">After finishing the backend, I started building the frontend users would need to
-            interact with
-            the server. MyFlix-Angular-client, a single-page app and responsive app, developed with
-            Angular Material. It has several interface views; The main view displays a list of all movies,
-            the single movie-view, shows information about the movie and allows users to add other movies to
-            the user's favorite movies' list by clicking on the heart-icon. Besides from the registration and
-            2 login-view, the user-profile-view allows users to update their user data and delete their
-            profile.</p>
-    </section>
+        <section class="section">
+            <h3 class="section-header">5. Angular</h3>
+            <p class="section-text">After finishing the backend, I started building the frontend users would need to
+                interact with
+                the server. MyFlix-Angular-client, a single-page app and responsive app, developed with
+                Angular Material. It has several interface views; The main view displays a list of all movies,
+                the single movie-view, shows information about the movie and allows users to add other movies to
+                the user's favorite movies' list by clicking on the heart-icon. Besides from the registration and
+                2 login-view, the user-profile-view allows users to update their user data and delete their
+                profile.</p>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">6. Challenges</h3>
-        <p class="section-text">Angular Material in the client-side enabled me to get the best UI-look compared to the
-            web
-            app's React version. I really have learnt a lot of modern technologies and tools in web
-            development so far. Also, I not only quickly became familiar with terminal – an indispensable must – but
-            I also got aware of
-            its practical use in web development. Understanding the basics of Angular, however, took me considerably
-            more time
-            compared to React, for instance, because it has a different syntax and (many more) rules and modules then
-            React.
-            <br><br>So, using
-            Angular
-            Material helped me to better understand a new framework but it takes definitely more time to be fluent
-            therein.
-            Being supported by both my mentor and coach was an important part to go through that
-            project.
-        </p>
-    </section>
+        <section class="section">
+            <h3 class="section-header">6. Challenges</h3>
+            <p class="section-text">Angular Material in the client-side enabled me to get the best UI-look compared to
+                the
+                web
+                app's React version. I really have learnt a lot of modern technologies and tools in web
+                development so far. Also, I not only quickly became familiar with terminal – an indispensable must – but
+                I also got aware of
+                its practical use in web development. Understanding the basics of Angular, however, took me considerably
+                more time
+                compared to React, for instance, because it has a different syntax and (many more) rules and modules
+                then
+                React.
+                <br><br>So, using
+                Angular
+                Material helped me to better understand a new framework but it takes definitely more time to be fluent
+                therein.
+                Being supported by both my mentor and coach was an important part to go through that
+                project.
+            </p>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">7. Duration</h3>
-        <p class="section-text">The development took a little longer than doing it with React. On the other hand,
-            Angular
-            Material has already included features, like built-in tests and dependencies, which make the
-            development process quicker.</p>
-    </section>
+        <section class="section">
+            <h3 class="section-header">7. Duration</h3>
+            <p class="section-text">The development took a little longer than doing it with React. On the other hand,
+                Angular
+                Material has already included features, like built-in tests and dependencies, which make the
+                development process quicker.</p>
+        </section>
 
-    <section class="section">
-        <h3 class="section-header">8. Credits</h3>
-        <ul id="credits-list">
-            <li><strong>Tutor: </strong>Ahmed Mahfoudh</li>
-            <li><strong>Mentor: </strong>Renish Bhaskaran</li>
-            <li><strong>Coach: </strong>Ravi Kumar Sharma</li>
-        </ul>
-    </section>
+        <section class="section">
+            <h3 class="section-header">8. Credits</h3>
+            <ul id="credits-list">
+                <li><strong>Tutor: </strong>Ahmed Mahfoudh</li>
+                <li><strong>Mentor: </strong>Renish Bhaskaran</li>
+                <li><strong>Coach: </strong>Ravi Kumar Sharma</li>
+            </ul>
+        </section>
+    </div>
 
 
 

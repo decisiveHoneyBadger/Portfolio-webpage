@@ -16,6 +16,10 @@
     list-style: none;
 }
 
+.super-section {
+    font-family: 'Krona One', sans-serif;
+}
+
 .section {
     background-color: #212121;
     border-radius: 4rem;
@@ -43,4 +47,5 @@
     color: #ffa500;
     text-shadow: 0.125rem 0.125rem 0.125rem #f5f5dc;
     text-align: center;
+    font-family: 'Krona One', sans-serif;
 }
